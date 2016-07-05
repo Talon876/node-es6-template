@@ -1,6 +1,6 @@
 # Project
 
-This is a template for ES6 node modules.
+This is a template for ES6 node modules based on [this boilerplate](https://github.com/revolunet/node-babel-boilerplate).
 
 ## QuickStart
 
