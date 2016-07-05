@@ -1,0 +1,37 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "repository": "Talon876/node-boilerplate",
+  "author": {
+    "name": "Talon Daniels",
+    "email": "talondaniels@gmail.com",
+    "url": "https://github.com/Talon876"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/babel-tape-runner ./spec/**/*.spec.js | ./node_modules/.bin/tap-spec",
+    "zuul": "./node_modules/.bin/zuul --local --open -- spec/**/*.spec.js",
+    "build": "npm run test && ./node_modules/.bin/babel -d ./dist ./src",
+    "publish": "git push && git push --tags && npm publish"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist/*",
+    "README.md",
+    "LICENCE"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-eslint": "*",
+    "babel-preset-es2015": "*",
+    "babel-tape-runner": "*",
+    "babelify": "7.2.0",
+    "eslint": "*",
+    "eslint-config-airbnb": "*",
+    "node-readme": "^0.1.8",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.0.0",
+    "zuul": "^3.8.0"
+  }
+}
